@@ -14,7 +14,7 @@ const buildControls = (props) => {
             return <BuildControl key={ctrl.label} type={ctrl.type} label={ctrl.label} addIngredients={props.addIngredients} removeIngredients={props.removeIngredients} ingredients={props.ingredients} />
         })}
         <p>Total Price: <b>{props.totalPrice.toFixed(2)}</b></p>
-        <button className={classes.OrderButton} disabled={Object.keys(props.ingredients).reduce((total, igKey) => { return total + props.ingredients[igKey] }, 0) <= 0}>ORDER NOW</button>
+        <button className={classes.OrderButton} disabled={Object.keys(props.ingredients).reduce((total, igKey) => { return total + props.ingredients[igKey] }, 0) <= 0} onClick={props.purchaseHandler}>ORDER NOW</button>
     </div>);
 }
 
