@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aux from '../../../hoc/Auxiliary';
+import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Logo from '../../Logo/Logo';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
