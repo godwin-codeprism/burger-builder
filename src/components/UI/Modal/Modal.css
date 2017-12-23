@@ -11,9 +11,6 @@
     box-sizing: border-box;
     transition: all 0.3s ease-out;
 }
-.Modal.show{
-    animation: fadeIn .25s ease;
-}
 
 @media (min-width: 600px) {
     .Modal {
